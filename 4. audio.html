@@ -19,13 +19,23 @@
     <!--EL ATRIBUTO SRC DEFINE LA RUTA DEL ARCHIVO DE AUDIO-->
     <!--EL ATRIBUTO AUTOPLAY HACE QUE EL AUDIO SE REPRODUZCA AUTOMATICAMENTE AL CARGAR LA PAGINA-->
     <!--EL ATRIBUTO MUTED HACE QUE EL AUDIO SE REPRODUZCA SIN SONIDO-->
-    <audio controls autoplay muted src="audio html/Minecraft Volume Alpha - 7 - Haggstrom.mp3">        
+    <!--EL ATRIBUTO LOOP HACE QUE EL AUDIO SE REPITA INFINITAMENTE-->
+    <!--EL ELEMENTO SOURCE PERMITE DEFINIR MULTIPLES FORMATOS DE AUDIO PARA QUE EL NAVEGADOR ELIJA EL QUE SOPORTA-->
+    <!--EL ATRIBUTO TYPE DEFINE EL TIPO DE AUDIO (MIME TYPE)-->
+    <audio controls autoplay muted loop>
+        <source src="audio html/Minecraft Volume Alpha - 7 - Haggstrom.mp3" type="audio/mpeg">
+        <source src="audio html/Minecraft Volume Alpha - 7 - Haggstrom.wav" type="audio/wav">
+        Tu navegador no soporta el elemento de audio.
     </audio>
     <br>
     <!--EL ATRIBUTO DOWNLOAD HACE QUE EL ARCHIVO SE DESCARGUE EN LUGAR DE ABRIRSE EN EL NAVEGADOR-->
     <!--EL VALOR DEL ATRIBUTO DOWNLOAD DEFINE EL NOMBRE CON EL QUE SE GUARDARA EL ARCHIVO-->
     <a href="audio html/Minecraft Volume Alpha - 7 - Haggstrom.mp3" download="Haggstrom_Minecraft.mp3">
-        Descargar audio
+        Descargar audio en mp3
+    </a>
+    <br>
+    <a href="audio html/Minecraft-Volume-Alpha-7-Haggstrom.wav" download="Haggstrom_Minecraft.wav">
+        Descargar audio en wav
     </a>
 </body>
 </html>

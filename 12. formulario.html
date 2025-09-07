@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+    <!--action="" ENVIA INFORMACION A LA DIRECCION ASIGNADA -->
+    <!--method="get" ENVIA LA INFORMACION POR LA URL -->
+    <!--method="post" ENVIA LA INFORMACION DE FORMA OCULTA -->
+    <!--enctype="multipart/form-data" ES PARA PODER SUBIR ARCHIVOS  -->
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <label for="username">Nombre de usuario:</label>
+        <!--type="" es para definir el tipo de input-->
+        <!--id="" es para relacionar el label con el input (cuando hagas click en las letras te redirija a la casilla)-->
+        <!--minlength="" es para definir la cantidad minima de caracteres-->
+        <!--required es para definir que el campo es obligatorio-->
+        <!--maxlength="" es para definir la cantidad maxima de caracteres-->
+        <input type="text" id="username" placeholder="cuchau" minlength="5" maxlength="10" required>
+        <br>
+        <!--CONTRASEÑA-->
+        <!--type="password" ES PARA QUE LOS CARACTERES INGRESADOS SE MUESTREN COMO PUNTOS O ASTERISCOS-->
+        <!--minlength="" ES PARA DEFINIR LA CANTIDAD MINIMA DE CARACTERES-->
+        <!--maxlength="" ES PARA DEFINIR LA CANTIDAD MAXIMA DE CARACTERES-->
+        <!--required ES PARA DEFINIR QUE EL CAMPO ES OBLIGATORIO-->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" minlength="5" maxlength="10" required>
+        <br>
+
+        <!--EMAIL-->
+        <!--type="email" ES PARA VALIDAR QUE EL FORMATO SEA DE CORREO ELECTRONICO-->
+        <!--placeholder="" ES PARA PONER UN TEXTO DE EJEMPLO DENTRO DEL INPUT-->
+        <!--required ES PARA HACER EL CAMPO OBLIGATORIO-->
+        <label for="email">correo:</label>
+        <input type="email" id="email" placeholder=fake.email@gmail.com required>"<br>
+
+        <!--NUMERO DE TELEFONO-->
+        <!--pattern="" ES PARA DEFINIR UNA EXPRESION REGULAR-->
+        <!--[0-9]{4}[0-9]{4} significa que solo se permiten numeros y que deben ser 8 numeros-->
+        <!--[0-9]{4}[-][0-9]{4} significa que solo se permiten numeros y que deben ser 8 numeros separados por un guion-->
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="phone" placeholder="1234-4567" pattern="[0-9]{4}[0-9]{4}" required>
+        <br>
+
+        <!--FECHA DE NACIMIENTO-->
+        <!--type="date" ES PARA PONER UNA FECHA-->
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input type="date" id="birthdate" required>
+        <br>
+
+        <!--CANTIDAD DE OBJETOS (COMPRAS)-->
+        <!--type="number" ES PARA PONER UN NUMERO-->
+        <!--min="" ES PARA DEFINIR EL VALOR MINIMO-->
+        <!--max="" ES PARA DEFINIR EL VALOR MAXIMO-->
+        <!--step="" ES PARA DEFINIR DE CUANTO EN CUANTO SE INCREMENTA O DECREMENTA-->
+        <!--value="" ES PARA DEFINIR UN VALOR POR DEFECTO-->
+        <label for="quantity">Cantidad de objetos:</label>
+        <input type="number" id="quantity" min="1" max="50" step="1" value="1" required>
+        <br>
+
+        <!--OPCIONES PARA ELEGIR-->
+        <!--type="radio" ES PARA PONER OPCIONES DE LAS CUALES SOLO SE PUEDE ELEGIR UNA-->
+        <!--name="" ES PARA AGRUPAR LAS OPCIONES (SI TIENEN EL MISMO NAME PERTENECEN AL MISMO GRUPO)-->
+        <!--value="" ES PARA DEFINIR EL VALOR QUE SE ENVIARA CUANDO SE SELECCIONE ESA OPCION-->
+        <!--id="" ES PARA RELACIONAR EL LABEL CON EL INPUT (CUANDO HAGAS CLICK EN LAS LETRAS TE REDIRIGIRA A LA CASILLA)--> 
+        
+        <label for="title">Titulo</label>
+        
+        <label for="Dr">Doctor</label>
+        <input type="radio" name="title" id="Dr" value="Dr">
+        <label for="Ing">Ingeniero</label>
+        <input type="radio" name="title" id="Ing" value="Ing">
+        <label for="Prof">Maestro</label>
+        <input type="radio" name="title" id="Prof" value="Prof">
+        <br>
+
+        <!--MENU DESPLEGABLE-->
+        <!--select ES PARA CREAR UN MENU DESPLEGABLE-->
+        <!--option ES PARA DEFINIR LAS OPCIONES DEL MENU-->
+        <!--disabled ES PARA DESHABILITAR UNA OPCION-->
+        <!--selected ES PARA SELECCIONAR UNA OPCION POR DEFECTO-->
+        <label for="payment">Pago</label>
+        <select id="payment" required>
+            <option value="" disabled selected>Seleccione una opción</option>
+            <option value="Efectivo">Efectivo</option>
+            <option value="Tarjeta">Tarjeta</option>
+            <option value="Transferencia">Transferencia</option>
+        </select>
+        <br>
+
+        <!--CHECKBOX-->
+        <!--type="checkbox" ES PARA PONER OPCIONES DE LAS CUALES SE PUEDEN ELEGIR VARIAS-->
+        <!--name="" ES PARA AGRUPAR LAS OPCIONES (SI TIENEN EL MISMO NAME PERTENECEN AL MISMO GRUPO)-->
+        <!--value="" ES PARA DEFINIR EL VALOR QUE SE ENVIARA CUANDO SE SELECCIONE ESA OPCION-->
+        <!--id="" ES PARA RELACIONAR EL LABEL CON EL INPUT (CUANDO HAGAS CLICK EN LAS LETRAS TE REDIRIGIRA A LA CASILLA)-->
+        <label for="subscribe">Suscrpcion:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Deseo suscribirme al boletin</label>
+        <br>
+
+        <!--COMENTARIO-->
+        <!--textarea ES PARA CREAR UN AREA DE TEXTO-->
+        <!--rows="" ES PARA DEFINIR LA CANTIDAD DE FILAS-->
+        <!--cols="" ES PARA DEFINIR LA CANTIDAD DE COLUMNAS-->
+        <!--name="" ES PARA DEFINIR EL NOMBRE DEL CAMPO-->
+        <label for="comments">Comentarios:</label> 
+        <textarea name="comments" id="comments" rows="3" cols="25"></textarea>
+        <br>
+
+        <!--SUBIR ARCHIVO-->
+        <!--type="file" ES PARA SUBIR UN ARCHIVO-->
+        <!--accept="" ES PARA DEFINIR LOS TIPOS DE ARCHIVOS ACEPTADOS-->
+        <label for="file">Imagen:</label>
+        <input type="file" id="file" accept=".jpg, .png, .gif">
+        <br>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+</head>
+<body>
+    <!-- Boton que redirige a Google -->
+    <h1>boton 1</h1>
+    <a href="https://www.google.com/"
+    target="_blank" title="Ir a Google">
+        <button style="font-size: 25px; background-color: lightskyblue; color: black; border-radius: 20px ;">Presioname</button>
+    </a>
+
+    <!-- Boton que muestra una alerta -->
+    <!--onclick="" para que realice las operaciones de una funcion-->
+    <h3>Boton 2</h3>
+    <button onclick="doSomething()" style="background-color: lightcoral; border-radius: 20px; font-size: 25px;">Alerta!</button>
+
+    <script>
+        function doSomething() {
+            alert("Hola, has presionado el botón!");
+        }
+    </script>
+</body>
+</html>
