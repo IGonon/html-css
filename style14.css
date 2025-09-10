@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+#p1{
+    color: red;
+}
+#p2{
+    color: blue;
+}
+#p3{
+    color: green;
+}
+#p4{
+    color: yellow;
+}
+
+/*Clases*/
+.odd{
+    font-size: 30px;
+    color: orange;
+}
+.even{
+    font-size: 35px;
+    color: purple;
+}

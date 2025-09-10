@@ -1,0 +1,38 @@
+/* CSS Document */
+/* Cambiando colores de fondo y texto */
+/* Seleccionando elementos por su nombre */
+/* body, h1, p, etc. */
+/* Seleccionando elementos por su id */
+/* #p1, #p2, #p3, etc. */
+/* Seleccionando elementos por su clase */
+
+/* podemos cambiar el color utilizando el nombre del color */
+body{
+    background-color: darkslategrey
+}
+/* o utilizando su valor en rgb */
+h1{
+    color: rgb(155, 58, 58);
+}
+/* o utilizando su valor en hexadecimal */
+#p1{
+    color: #ff5733;
+}
+/* o utilizando su valor en hsl */
+/* hsl(hue, saturation, lightness) */
+/* hue: 0-360 */
+/* saturation: 0-100% */
+/* lightness: 0-100% */
+/* se puede incluso ajustar que tán traslucido es el color*/
+#p2{
+    color: hsla(198, 100%, 60%, 0.692); 
+}
+/* o utilizando su valor en hwb */
+/* hwb(hue, whiteness, blackness) */
+/* hue: 0-360 */
+/* whiteness: 0-100% */
+/* blackness: 0-100% */
+/* el valor de whiteness y blackness no pueden sumar más de 100% */
+#p3{
+    color: hwb(120 16% 33%);
+}
