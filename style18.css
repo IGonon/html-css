@@ -1,0 +1,11 @@
+/* horizontal vertical difuminado color */
+/* multiple shadows */
+h1{
+    text-shadow: 2px 2px 5px red, -2px -2px 5px blue; 
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 5px 5px 10px green, -5px -5px 10px orange;
+}

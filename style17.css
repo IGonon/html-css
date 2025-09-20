@@ -1,0 +1,17 @@
+h1{
+    border-style: solid;
+    border-width: 4px;
+    border-color: orange;
+    border-radius: 15px;
+}
+h2{
+    border: 3px dashed hsl(240, 100%, 50%); /*otro modo de definir el borde*/
+    display: inline-block; /* Encaja el borde con el tamaño del texto */
+}
+p{
+    font-size: 25px;
+    border-bottom: 6px dotted green; 
+    border-top: 6px dotted brown;
+    border-left: 6px solid blue;
+    border-right: 6px solid orange;
+}

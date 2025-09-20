@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.box{
+    border: 5px solid black;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+}
+#box1{
+    background-color: lightblue;
+    border-radius: 0px;
+    margin: 50px; /* margin agrega un margen a todo el rededor de la caja*/
+}
+#box2{
+    background-color: lightgreen;
+    border-radius: 0px;
+    margin: auto; /* margin: auto; centra la caja horizontal y verticalmente */
+}
+#box3{
+    background-color: lightcoral;
+    border-radius: 50px; /* border-radius agrega bordes redondeados a la caja */
+    margin-left: auto; /* margin-left: auto; y margin-right: auto; centra la caja horizontalmente */
+}

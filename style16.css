@@ -1,0 +1,23 @@
+@font-face {
+    font-family:'Libertinus Keyboard'; /* Here we define the font name */
+    src: url(fonts/LibertinusKeyboard-Regular.ttf); /* Here we define the path to the font file */
+}
+
+
+h1{
+    font-family: 'Bitcount Grid Double', sans-serif; /* Here we call the font name defined in Google Fonts */
+}
+h2{
+    font-family: Libertinus Keyboard, sans-serif; /* Here we call the font name defined in @font-face */
+    font-size: 30px; /* px, em, rem, %, vw, vh */
+    font-weight: normal; /* normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900 */
+    font-style: normal; /* normal, italic, oblique */
+    color: red;
+}
+p{
+    font-family: 'Edu NSW ACT Cursive', cursive; /* Here we call the font name defined in Google Fonts */
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: blue; /* You can use color names or HEX, RGB, HSL, etc. */
+}
