@@ -1,0 +1,17 @@
+body {
+    border: 3px solid black;
+    display: flow-root; /* display: flow-root; crea un nuevo contexto de formato de bloque, lo que significa que los elementos flotantes dentro de este contenedor no afectarán a los elementos fuera de él (todo se quedara dentro del contenedor)*/
+}
+
+#img1{ /* # significa que le estas aplicando css a este id */ 
+    float: left; /* float: left; hace que la imagen se alinee a la izquierda del contenedor */
+}
+
+#img2{
+    float: right; /* float: right; hace que la imagen se alinee a la derecha del contenedor */
+}
+
+#video1{
+    float: left; /* float: right; hace que el video se alinee a la derecha del contenedor */
+    margin-right: 10px; /* margin-right: 10px; agrega un margen derecho de 10px al video */
+}
