@@ -1,0 +1,12 @@
+#container{
+    border: 2px solid;
+}
+
+/* decendent solo requiere un espacio
+ve cambiando entre + ~ > para ir viendo como se van modificando
+*/
+
+
+#container + p{ 
+    background-color: yellow;
+}

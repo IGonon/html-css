@@ -1,0 +1,28 @@
+li:hover{
+    background-color: lightblue;
+}
+li:not(:hover){
+    background-color: rgb(52, 169, 207);
+}
+
+/* Utilizando id*/
+
+#lista2:hover{
+    background-color: rgb(38, 174, 219);
+}
+#lista2:not(:hover){
+    background-color: rgb(139, 129, 235);
+}
+
+#lista3:nth-child(even){
+    background-color: aqua;
+}
+
+#Greeting p{
+    background-color: hsl(195, 53%, 79%);
+    padding: 10px;
+    display: none;
+}
+#Greeting:hover p{
+    display: block;
+}
