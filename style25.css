@@ -1,0 +1,7 @@
+body{
+    background-image: url(imagenes%20html/pexels-reto-burkler-640438-1443867.jpg); /*utilize el %20 para hacer saber que existe un espacio en el nombre de la carpeta*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover ;
+}

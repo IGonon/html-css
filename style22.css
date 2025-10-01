@@ -1,0 +1,20 @@
+div{
+    background-color: hsl(0, 79%, 72%);
+    width: 100px;
+    height: 100px;
+    display: inline;
+
+}
+#span1{
+    background-color: hsl(195, 53%, 79%);
+    width: 100px;
+    height: 100px;
+    display: block; /*esto hace que actue como un elemento tipo bloque apesar de ser un div*/
+}
+
+#span2{
+    background-color: hsl(271, 43%, 60%);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
