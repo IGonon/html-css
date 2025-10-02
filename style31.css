@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none; /*Elimina el bullet de la lista*/
+    background-color: hsl(34, 78%, 91%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: hsl(0, 0%, 0%);
+    text-decoration: none; /*Elimina la linea debajo del texto al ser un hyperlink*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(33, 96%, 82%);
+}
+.navbar li{
+    float: left;
+}
