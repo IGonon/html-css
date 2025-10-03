@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    flex-wrap: wrap;
+    /* align-content: flex-start; /*flex-wrap y align-content se utilizan juntos*/
+    /* column-gap: 1em; /*para espacio entre las columas*/
+    /*  row-gap: 1em; /*para espacio entre las filas*/
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: hsl(0, 100%, 50%);
+    align-self: center; /*Nos ayuda a cambiar la posicion de un solo elemento*/
+}
+#box2{
+    background-color: hsl(64, 100%, 50%);
+}
+#box3{
+    background-color: hsl(135, 100%, 50%);
+}
+#box4{
+    background-color: hsl(253, 100%, 50%);
+    order: -1; /*Nos ayuda a cambiar la posicion con respecto a las otros*/
+}
